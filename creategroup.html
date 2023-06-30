@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style_creategroup.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav1616.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav3232.png" />
+    <title>Family Mate - utwórz grupę dla swojej rodziny!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/5c1734ba4f.js"
+      crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logo">
+        <!-- <a href="index.html"> -->
+        <img src="img/logo_bg_2.png" alt="Logo serwisu FamilyMate" />
+        <!-- </a> -->
+      </div>
+      <div class="bar">
+        <div class="color one"></div>
+        <div class="color two"></div>
+        <div class="color three"></div>
+      </div>
+      <div class="welcome_panel">
+        <div class="header">
+          <span class="hello"
+            >Dzień dobry, wkrótce stworzysz grupę dla swojej rodziny.</span
+          >
+        </div>
+        <div class="icon">
+          <img src="img/clock.png" alt="Ikona zegara" />
+          <p class="caption">
+            Dane wypełnisz w ok. <span class="bold">5 minut</span>.
+          </p>
+        </div>
+        <div class="button">
+          <button>Zaczynamy!</button>
+        </div>
+      </div>
+      <div class="first_step">
+        <div class="header">
+          <span class="hello"
+            ><span class="name">Michał,</span> miło Cię poznać! Powiedz nam
+            więcej o sobie...</span
+          >
+        </div>
+        <div class="form">
+          <form>
+            <div class="label">Wpisz nazwę dla swojej rodziny</div>
+            <div class="name_family">
+              <input
+                type="text"
+                id="name_family_input"
+                name="text"
+                class="input"
+                required />
+            </div>
+            <div class="label">Ile masz dzieci?</div>
+            <div class="number_children">
+              <select id="number" name="number" class="input" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="label">Wpisz adres e-mail drugiego rodzica</div>
+            <div class="partner_email">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input"
+                required />
+            </div>
+            <div class="label">Podaj dochód netto drugiego rodzica</div>
+            <div class="income_partner">
+              <input
+                type="number"
+                id="manual"
+                name="manual"
+                class="input"
+                required />
+            </div>
+            <div class="label">Podaj swój dochód netto</div>
+            <div class="income">
+              <input
+                type="number"
+                id="manual"
+                name="manual"
+                class="input"
+                required />
+            </div>
+            <button type="submit" class="button">Dalej</button>
+          </form>
+        </div>
+      </div>
+      <div class="add_children">
+        <div class="header">Utwórz profil dziecka...</div>
+        <div class="children_photo">
+          <img
+            src="children_photos/user.png"
+            class="childrenPhoto"
+            alt="Zdjęcie dziecka" />
+        </div>
+        <div class="form">
+          <form>
+            <div class="photo">
+              <input
+                type="file"
+                id="phot"
+                name="photo"
+                accept="image/*"
+                class="input_file" />
+            </div>
+            <div class="label">Imię:</div>
+            <div class="name">
+              <input type="text" id="nam" name="name" class="input" />
+            </div>
+            <div class="label">Data urodzenia:</div>
+            <div class="birth">
+              <input
+                type="date"
+                id="birthdate"
+                name="birthdate"
+                class="input" />
+            </div>
+            <div class="label">Wzrost (w cm):</div>
+            <div class="height">
+              <input type="number" id="heigh" name="height" class="input" />
+            </div>
+            <div class="label">Masa ciała (w kg):</div>
+            <div class="weight">
+              <input type="number" id="weigh" name="weight" class="input" />
+            </div>
+
+            <button type="submit" class="button">Zapisz</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <footer class="fotter">
+      <div class="me">Michał Krudysz &copy; 2023</div>
+    </footer> -->
+    <script src="js/creategroup.js"></script>
+  </body>
+</html>

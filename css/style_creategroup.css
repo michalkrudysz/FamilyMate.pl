@@ -1,0 +1,456 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .logo {
+  position: absolute;
+  left: 55px;
+  top: 30px;
+}
+.wrapper .logo img {
+  width: 175px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.wrapper .bar {
+  position: absolute;
+  height: 7px;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.wrapper .bar .one {
+  background-color: #44a67a;
+  width: 20vw;
+}
+.wrapper .bar .two {
+  background-color: #141f25;
+  width: 50vw;
+}
+.wrapper .bar .three {
+  background-color: #95d375;
+  width: 30vw;
+}
+.wrapper .welcome_panel {
+  display: flex;
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  margin-top: 130px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .welcome_panel .header .hello {
+  font-size: 1.3em;
+  letter-spacing: 0.5px;
+}
+.wrapper .welcome_panel .icon {
+  margin-top: 35px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .welcome_panel .icon img {
+  width: 100px;
+  height: 100px;
+}
+.wrapper .welcome_panel .icon .caption {
+  margin-top: 10px;
+  font-weight: 400;
+}
+.wrapper .welcome_panel .icon .caption .bold {
+  font-weight: 600;
+}
+.wrapper .welcome_panel .button {
+  margin-top: 30px;
+}
+.wrapper .welcome_panel .button button {
+  width: 350px;
+  height: 55px;
+  border-radius: 5px;
+  line-height: inherit;
+  border: none;
+  color: inherit;
+  outline: none;
+  background-color: #2fc767;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.wrapper .welcome_panel .button button:hover {
+  background-color: #1d8041;
+}
+.wrapper .first_step {
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  margin-top: 130px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .first_step .header .hello {
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+}
+.wrapper .first_step .form {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+.wrapper .first_step .form .label {
+  font-weight: 500;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+.wrapper .first_step .form .error {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: rgb(221, 66, 66);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper .first_step .form .input {
+  width: 500px;
+  height: 54px;
+  margin-bottom: 15px;
+  font-family: inherit;
+  font-size: 17px;
+  text-align: center;
+  line-height: inherit;
+  font-weight: bold;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: black;
+  border: 2px solid rgba(84, 86, 87, 0.7607843137);
+  outline: none;
+}
+.wrapper .first_step .form .input:hover {
+  border: 3px solid #229c4f;
+}
+.wrapper .first_step .form .input:focus {
+  font-size: 17px;
+  text-align: center;
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  border: 3px solid #229c4f;
+}
+.wrapper .first_step .form .input::-moz-placeholder {
+  font-weight: bold;
+}
+.wrapper .first_step .form .input::placeholder {
+  font-weight: bold;
+}
+.wrapper .first_step .form .button {
+  margin-top: 10px;
+  width: 500px;
+  height: 54px;
+  line-height: inherit;
+  border: none;
+  color: inherit;
+  outline: none;
+  background-color: #2fc767;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: background-color 0.5s;
+}
+.wrapper .first_step .form button:hover {
+  background-color: #1d8041;
+}
+.wrapper .add_children {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  margin-top: 100px;
+}
+.wrapper .add_children .header {
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+}
+.wrapper .add_children .children_photo {
+  margin-top: 25px;
+}
+.wrapper .add_children .children_photo .childrenPhoto {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .add_children .form {
+  margin-top: 20px;
+}
+.wrapper .add_children .form .label {
+  font-weight: 500;
+  font-size: 0.7em;
+}
+.wrapper .add_children .form .error {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: rgb(221, 66, 66);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper .add_children .form .input {
+  width: 500px;
+  height: 54px;
+  font-family: inherit;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: inherit;
+  font-weight: bold;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: black;
+  border: 2px solid rgba(84, 86, 87, 0.7607843137);
+  outline: none;
+}
+.wrapper .add_children .form .input:hover {
+  border: 3px solid #229c4f;
+}
+.wrapper .add_children .form .input:focus {
+  font-size: 17px;
+  text-align: center;
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  border: 3px solid #229c4f;
+}
+.wrapper .add_children .form .input::-moz-placeholder {
+  font-weight: bold;
+}
+.wrapper .add_children .form .input::placeholder {
+  font-weight: bold;
+}
+.wrapper .add_children .form .photo {
+  width: 100%;
+  text-align: center;
+  margin-top: -10px;
+}
+.wrapper .add_children .form .photo input[type=file] {
+  border: none;
+  padding: 5px;
+  font-size: 13px;
+  background-color: none;
+  margin-bottom: 20px;
+  padding: 7px 10px;
+}
+.wrapper .add_children .form .photo input[type=file]::-webkit-file-upload-button {
+  border-radius: 5px;
+  background-color: #2fc767;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  outline: none;
+}
+.wrapper .add_children .form .photo input[type=file]::-moz-file-upload-button {
+  background-color: #2fc767;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.wrapper .add_children .form .photo input[type=file]::-ms-browse {
+  background-color: #2fc767;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.wrapper .add_children .form .photo input[type=file]::-ms-value {
+  display: none;
+}
+.wrapper .add_children .form .button {
+  margin-top: 10px;
+  width: 500px;
+  height: 54px;
+  line-height: inherit;
+  border: none;
+  color: inherit;
+  outline: none;
+  background-color: #2fc767;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: background-color 0.5s;
+}
+.wrapper .add_children .form button:hover {
+  background-color: #1d8041;
+}
+
+.fotter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to right, #0c4951, #113e47, #14333c, #152931, #141f25);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fotter .me {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(218, 218, 218);
+  font-size: 17px;
+}
+
+@media (max-width: 420px) {
+  .fotter {
+    display: none;
+  }
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .wrapper .logo {
+    display: none;
+  }
+  .wrapper .welcome_panel .header {
+    align-self: center;
+    text-align: center;
+  }
+  .wrapper .welcome_panel .header .hello {
+    font-size: 1.1em;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .wrapper .welcome_panel .icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .wrapper .welcome_panel .icon .caption {
+    font-size: 0.9em;
+  }
+  .wrapper .welcome_panel .button {
+    margin-top: 20px;
+  }
+  .wrapper .welcome_panel .button button {
+    height: 50px;
+  }
+  .wrapper .first_step .header {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrapper .first_step .header .hello {
+    font-size: 1.1em;
+  }
+  .wrapper .first_step .form {
+    align-self: center;
+  }
+  .wrapper .first_step .form .input {
+    width: 95vw;
+    height: 50px;
+  }
+  .wrapper .first_step .form .button {
+    width: 95vw;
+    height: 50px;
+  }
+  .wrapper .first_step .form .label {
+    font-size: 0.7em;
+  }
+  .wrapper .add_children .children_photo {
+    margin-top: 20px;
+  }
+  .wrapper .add_children .children_photo .childrenPhoto {
+    width: 125px;
+    height: 125px;
+  }
+  .wrapper .add_children .header {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrapper .add_children .header .hello {
+    font-size: 1em;
+  }
+  .wrapper .add_children .form {
+    align-self: center;
+  }
+  .wrapper .add_children .form .input {
+    width: 95vw;
+    height: 50px;
+  }
+  .wrapper .add_children .form .button {
+    width: 95vw;
+    height: 50px;
+  }
+  .wrapper .add_children .form .label {
+    font-size: 0.7em;
+    margin-bottom: 10px;
+  }
+  .wrapper .add_children .form .photo input[type=file]::-webkit-file-upload-button {
+    padding: 7.5px 12.5px;
+  }
+}
+@media (max-width: 1440px) {
+  .wrapper .first_step {
+    margin-top: 105px;
+  }
+  .wrapper .first_step .form {
+    margin-top: 10px;
+  }
+  .wrapper .first_step .form .input {
+    height: 50px;
+  }
+  .wrapper .first_step .form .button {
+    height: 50px;
+  }
+  .wrapper .add_children {
+    margin-top: 50px;
+  }
+  .wrapper .add_children .header {
+    font-size: 1.3em;
+  }
+  .wrapper .add_children .children_photo .childrenPhoto {
+    width: 135px;
+    height: 135px;
+  }
+  .wrapper .add_children .form {
+    margin-top: 10px;
+  }
+  .wrapper .add_children .form .input {
+    height: 48px;
+  }
+  .wrapper .add_children .form .button {
+    height: 48px;
+  }
+}/*# sourceMappingURL=style_creategroup.css.map */
